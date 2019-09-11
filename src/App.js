@@ -4,6 +4,7 @@ import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
+import { connect } from 'react-redux'
 
 const App = () => {
   
@@ -30,4 +31,12 @@ const App = () => {
   );
 };
 
+const mapStateToProps = state => {
+  console.log('mSTP state:', state);
+};
+
 export default App;
+export default connect(
+  mapStateToProps,
+  {});
+

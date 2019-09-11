@@ -15,3 +15,10 @@ const intialState = {
       { id: 4, name: 'Rear spoiler', price: 250 }
     ]
   };
+
+  export const carReducer = (state = initialState) => {
+      console.log(intialState);
+  
+//   default:
+//       return state, dispatch;
+  }
